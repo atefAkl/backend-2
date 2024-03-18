@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+      <head>
+           <title>  Weather App</title>
+           
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+           
+           <link rel="stylesheet"  href="css/style.css" />
+
+           <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" />
+      </head>
+
+      <body>
+         
+               <div>{{>header}}</div>
+           <div class="container">
+           
+           <h3 class="page-title"> Welcome to Atef Aql App</h3>
+           <h4>Start Searching your places:</h4>
+
+            <form id="form1" action="/weather">
+            <input type="text" id="address" name="address">
+            <button class="form-submit"><i class="fa fa-search"></i></button>
+        </form>
+          <p id="location"></p>
+          <div id="forecast">
+               <hr>
+               <div id="icon" style="width: 64px; height: 64px"></div>
+               <div id="country"></div>
+               <div id="tz_id"></div>
+               <div id="region"></div>
+               <div id="lat"></div>
+               <div id="lon"></div>
+               <div id="last_updated"></div>
+               
+               <div id="temp_c"></div>
+          </div>
+          <p id="error"></p>
+           </div>
+          
+
+          
+          
+          <script src="js/script.js"></script>
+      </body>
+</html>
